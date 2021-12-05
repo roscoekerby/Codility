@@ -1,3 +1,4 @@
+#Find longest sequence of zeros in binary representation of an integer.
 def solution(N):    
     binary = bin(N)[2:]
     longestBinaryGap = 0
