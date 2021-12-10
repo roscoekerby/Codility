@@ -1,4 +1,10 @@
 def solution(A, K):
-    K = K % (len(A)-1)
-    B = A[K-1:] + A[0:K-1]
-    return B
+    Anew = A
+    lenA = len(A)
+    
+    for i in range(K):
+        Alast = Anew[lenA-1]
+        Anew = Anew[0:lenA-1]
+        Anew.insert(0, Alast)
+        
+    return Anew
